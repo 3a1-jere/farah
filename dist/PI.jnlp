@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="PI.jnlp">
+  <information>
+    <title>PI</title>
+    <vendor>farah</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="PI.jar" size="18503" download="eager" />
+    <jar href="lib/mysql-connector-java-5.1.23-bin.jar" size="827921" download="eager" />
+    <jar href="lib/sqljdbc4.jar" size="537303" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="PI" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="pi.PI"  name="PI" />
+  <update check="always"/>
+</jnlp>
